@@ -23,7 +23,7 @@ export const AnalyzeTab = () => {
   };
 
   return (
-    <div className="h-full flex flex-col items-center overflow-auto px-4">
+    <div className="h-screen flex flex-col items-center overflow-auto px-4">
       <Card className="w-full max-w-4xl p-6 bg-card border-border mb-6">
         <h2 className="text-2xl font-bold text-foreground mb-6">Code Analysis</h2>
         <form onSubmit={handleAnalyze} className="space-y-4">
@@ -35,7 +35,7 @@ export const AnalyzeTab = () => {
               id="code"
               name="code"
               rows={12}
-              className="w-full bg-background text-foreground border-input"
+              className="w-full bg-background text-foreground border-input h-full"
               placeholder="Paste your code here"
               required
             />
