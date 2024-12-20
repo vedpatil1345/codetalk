@@ -41,7 +41,7 @@ const CodePage = () => {
                 <TabsTrigger 
                   value="Code-analyzer"
                   onClick={() => setActiveTab("Code-analyzer")}
-                  className={`flex items-center gap-2 focus:border-white bg-white text-black dark:bg-black dark:text-white ${
+                  className={`flex items-center gap-2 bg-white text-black dark:bg-black dark:text-white ${
                     activeTab === "Code-analyzer" ? "border-4 border-red-500 dark:border-cyan-700" : "border-2 border-black dark:border-white"
                   }`}
                 >
@@ -51,7 +51,7 @@ const CodePage = () => {
                 <TabsTrigger 
                   value="Error-analyzer"
                   onClick={() => setActiveTab("Error-analyzer")}
-                  className={`flex items-center gap-2 focus:border-white bg-white text-black dark:bg-black dark:text-white ${
+                  className={`flex items-center gap-2 bg-white text-black dark:bg-black dark:text-white ${
                     activeTab === "Error-analyzer" ? "border-4 border-red-500 dark:border-cyan-700" : "border-2 border-black dark:border-white"
                   }`}
                 >
