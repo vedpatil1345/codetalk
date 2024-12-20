@@ -62,7 +62,7 @@ export const LlmResponse: React.FC<LlmResponseProps> = ({ query, name }) => {
           <div className="prose prose-sm dark:prose-invert max-w-none">
             <ReactMarkdown remarkPlugins={[remarkGfm]}
             components={{
-              code({ node, inline, className, children, ...props }) {
+              code: ({ node, inline, className, children, ...props }: { node?: any, inline?: boolean, className?: string, children?: React.ReactNode }) => {
                   const match = /language-(\w+)/.exec(className || "");
                   return !inline && match ? (
                       <SyntaxHighlighter
@@ -79,7 +79,7 @@ export const LlmResponse: React.FC<LlmResponseProps> = ({ query, name }) => {
                       </code>
                   );
               },
-          }}>{response}</ReactMarkdown>
+            }}>{response}</ReactMarkdown>
           </div>
         )}
       </CollapsibleContent>
