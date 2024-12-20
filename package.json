@@ -2,7 +2,11 @@
   "name": "code-analysis-app",
   "private": true,
   "version": "0.0.0",
+<<<<<<< HEAD
   "homepage": "https://vedpatil1345.github.io/Codetalk",
+=======
+  "homepage": "https://vedpatil1345.github.io/codetalk",
+>>>>>>> 93ab86ea2af9e2a7cac3fce895f4c459160d5bcc
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
