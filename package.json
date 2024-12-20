@@ -2,15 +2,11 @@
   "name": "code-analysis-app",
   "private": true,
   "version": "0.0.0",
-<<<<<<< HEAD
   "homepage": "https://vedpatil1345.github.io/Codetalk",
-=======
-  "homepage": "https://vedpatil1345.github.io/codetalk",
->>>>>>> 93ab86ea2af9e2a7cac3fce895f4c459160d5bcc
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
@@ -59,6 +55,7 @@
     "react-dom": "^18.2.0",
     "react-markdown": "^9.0.1",
     "react-resizable-panels": "^2.1.7",
+    "react-router-dom": "^7.0.2",
     "recharts": "^2.15.0",
     "sonner": "^1.7.1",
     "tailwind-merge": "^2.2.1",
