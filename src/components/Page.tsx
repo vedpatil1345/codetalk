@@ -37,7 +37,7 @@ const CodePage = () => {
           
           <main className="flex-1 overflow-hidden">
             <Tabs defaultValue="Code-analyzer" className="h-full flex flex-col items-center w-full">
-              <TabsList className=" w-full max-w-2xl mx-auto grid grid-cols-2 px-4 m-1 gap-2">
+              <TabsList className=" h-fit justify-center align-middle w-full max-w-2xl mx-auto grid grid-cols-2 px-4 m-1 gap-2">
                 <TabsTrigger 
                   value="Code-analyzer"
                   onClick={() => setActiveTab("Code-analyzer")}
