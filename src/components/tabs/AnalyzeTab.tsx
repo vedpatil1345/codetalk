@@ -34,7 +34,7 @@ export const AnalyzeTab = () => {
             <Textarea
               id="code"
               name="code"
-              rows={12}
+              rows={8}
               className="w-full bg-background text-foreground border-input h-full  bg-white dark:bg-gray-800"
               placeholder="Paste your code here"
               required

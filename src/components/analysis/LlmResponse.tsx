@@ -21,9 +21,9 @@ export const LlmResponse: React.FC<LlmResponseProps> = ({ query, name }) => {
     <Collapsible 
       open={isOpen} 
       onOpenChange={setIsOpen}
-      className="w-full space-y-2 rounded-lg border-border bg-card transition-all duration-200 bg-white text-black dark:bg-black  dark:text-white "
+      className="w-full space-y-2 rounded-lg border-border bg-card transition-all duration-200 text-black bg-gray-100 dark:text-white dark:bg-gray-700 "
     >
-      <CollapsibleTrigger className="flex w-full items-center justify-between p-4 hover:bg-muted rounded-t-lg transition-colors duration-200 bg-white text-black border-black border-2 dark:bg-black  dark:text-white dark:border-white">
+      <CollapsibleTrigger className="flex w-full items-center justify-between p-4 hover:bg-muted rounded-t-lg transition-colors duration-200 border-black border-2 text-black bg-gray-100 dark:text-white dark:bg-gray-700 dark:border-white">
         <div className="flex items-center gap-3">
           <h2 className="font-semibold text-foreground">{name}</h2>
           {isLoading && <Loader2 className="h-4 w-4 animate-spin text-muted-foreground" />}
@@ -47,7 +47,7 @@ export const LlmResponse: React.FC<LlmResponseProps> = ({ query, name }) => {
         </div>
       </CollapsibleTrigger>
 
-      <CollapsibleContent className="p-4 overflow-y-auto max-h-[500px] border-t border-border bg-white text-black border-black border-2 dark:bg-black  dark:text-white dark:border-white">
+      <CollapsibleContent className="p-4 overflow-y-auto max-h-[500px] border-t border-border border-black border-2 text-black bg-gray-100 dark:text-white dark:bg-gray-700 dark:border-white">
         {error ? (
           <Alert variant="destructive" className="mb-4">
             <AlertCircle className="h-4 w-4" />

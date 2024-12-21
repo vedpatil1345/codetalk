@@ -31,12 +31,12 @@ export const ErrorTab = () => {
             <label htmlFor="error" className="block mb-2 font-medium text-orange-600 dark:text-blue-400 ">
               Error Message
             </label>
-            <Input
-              type="text"
+            <Textarea
               id="error"
               name="error"
-              className="w-full bg-white text-black border-input"
+              className="w-full bg-background text-foreground border-input"
               placeholder="Paste your error message here"
+              rows={2}
               required
             />
           </div>
@@ -49,7 +49,7 @@ export const ErrorTab = () => {
               name="codeContext"
               className="w-full bg-background text-foreground border-input"
               placeholder="Add relevant code context here"
-              rows={8}
+              rows={7}
             />
           </div>
           <Button 
