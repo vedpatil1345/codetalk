@@ -34,9 +34,9 @@ const TypewriterText = () => {
   
   return (
     <div className="inline-flex items-center">
-      <span className="ml-2 font-mono text-primary">
+      <span className="ml-2 font-mono text-orange-400 dark:text-green-500">
         {"{"}
-        <ReactTyped
+        <ReactTyped className='text-green-500 dark:text-cyan-300'
           strings={strings}
           typeSpeed={150}
           backSpeed={100}
@@ -85,7 +85,7 @@ const HomePage = () => {
           <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between h-16 items-center">
               <div className="flex-shrink-0 flex items-center">
-                <h1 className="text-2xl font-bold flex items-center">
+                <h1 className="text-2xl font-bold flex items-center text-blue-700 dark:text-blue-300">
                   Code
                   <TypewriterText />
                 </h1>
