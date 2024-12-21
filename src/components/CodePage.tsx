@@ -39,13 +39,13 @@ const CodePage = () => {
           </div>
         </nav>
       <div className="h-screen w-screen bg-background transition-colors duration-300 dark:bg-gray-900 dark:text-white">
-        <div className="h-screen w-full flex flex-col p-4">
+        <div className="h-screen w-full flex flex-col p-4 text-black bg-gray-200 dark:text-white dark:bg-gray-900">
         
 
           
-          <main className="flex-1 overflow-hidden">
-            <Tabs defaultValue="Code-analyzer" className="h-full flex flex-col items-center w-full">
-              <TabsList className=" h-fit justify-center align-middle w-full max-w-2xl mx-auto grid grid-cols-2 px-4 m-1 gap-2">
+          <main className="flex-1 overflow-hidden text-black bg-gray-200 dark:text-white dark:bg-gray-900">
+            <Tabs defaultValue="Code-analyzer" className="h-full flex flex-col items-center w-full text-black bg-gray-200 dark:text-white dark:bg-gray-900">
+              <TabsList className=" h-fit justify-center align-middle w-full max-w-2xl mx-auto grid grid-cols-2 px-4 m-1 gap-2 text-black bg-gray-200 dark:text-white dark:bg-gray-900">
                 <TabsTrigger 
                   value="Code-analyzer"
                   onClick={() => setActiveTab("Code-analyzer")}
