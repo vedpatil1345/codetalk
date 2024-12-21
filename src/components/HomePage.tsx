@@ -123,9 +123,7 @@ const HomePage = () => {
               <Button size="lg" onClick={() => setIsSignupOpen(true)}>
                 Get Started - It's Free
               </Button>
-              <Button size="lg" variant="outline">
-                Learn More
-              </Button>
+              
             </div>
           </div>
         </div>
