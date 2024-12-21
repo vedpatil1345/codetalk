@@ -12,13 +12,13 @@ const CodePage = () => {
 
   return (
     <ThemeProvider defaultTheme="system" storageKey="ui-theme">
-      <div className="h-screen w-screen bg-background transition-colors duration-300 dark:bg-gray-800 dark:text-white">
-        <div className="h-screen w-full flex flex-col p-4">
-          <header className="flex justify-between items-center mb-8 px-4">
-            <div className="text-center flex-1">
-              <h1 className="text-4xl font-bold text-foreground flex items-center justify-center">
-                <Avatar.Root className="h-12 w-12 mr-4">
-                  <svg width="50" height="50" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <nav className="border-b bg-white dark:bg-gray-800 rounded-xl flex">
+          <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex justify-between h-16 items-center flex-wrap">
+              <div className="flex-shrink-0 flex ">
+                
+              <Avatar.Root className="h-8 w-8 mt-1 mr-1 text-2xl font-bold flex justify-center text-blue-700 dark:text-blue-300">
+                  <svg width="30" height="30" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12.5 2H8V7H13V2.5C13 2.22386 12.7761 2 12.5 2ZM13 8H8V13H12.5C12.7761 13 13 12.7761 13 12.5V8ZM7 7V2H2.5C2.22386 2 2 2.22386 2 2.5V7H7ZM2 8V12.5C2 12.7761 2.22386 13 2.5 13H7V8H2ZM2.5 1C1.67157 1 1 1.67157 1 2.5V12.5C1 13.3284 1.67157 14 2.5 14H12.5C13.3284 14 14 13.3284 14 12.5V2.5C14 1.67157 13.3284 1 12.5 1H2.5Z" 
                       fill="currentColor" 
                       fillRule="evenodd" 
@@ -26,14 +26,22 @@ const CodePage = () => {
                     />
                   </svg>
                 </Avatar.Root>
-                CodeTalk
-              </h1>
-              <p className="text-muted-foreground mt-2">
-                Analyze your code and debug errors with AI assistance
-              </p>
+                <h1 className="text-2xl font-bold flex justify-center text-blue-700 dark:text-blue-300">
+                
+                  CodeTalk
+                </h1>
+              </div>
+              <div className="flex items-center gap-4">
+                <ThemeToggle />
+                
+              </div>
             </div>
-            <ThemeToggle />
-          </header>
+          </div>
+        </nav>
+      <div className="h-screen w-screen bg-background transition-colors duration-300 dark:bg-gray-900 dark:text-white">
+        <div className="h-screen w-full flex flex-col p-4">
+        
+
           
           <main className="flex-1 overflow-hidden">
             <Tabs defaultValue="Code-analyzer" className="h-full flex flex-col items-center w-full">
