@@ -79,9 +79,10 @@ const HomePage = () => {
 
   return (
     <ThemeProvider defaultTheme="system" storageKey="ui-theme">
-      <div className="min-h-screen w-screen bg-background">
+      <div className="h-screen w-screen bg-gray-200 dark:bg-gray-900">
+      <div className="min-h-screen w-screen bg-gray-200 dark:bg-gray-900">
         {/* Navigation */}
-        <nav className="border-b">
+        <nav className="border-b bg-white dark:bg-gray-900">
           <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between h-16 items-center">
               <div className="flex-shrink-0 flex items-center">
@@ -93,7 +94,7 @@ const HomePage = () => {
                 <ThemeToggle />
                 <Button 
                   variant="ghost"
-                  className="bg-white text-black hover:bg-gray-100 dark:bg-black dark:text-white dark:hover:bg-gray-800"
+                  className="text-black bg-gray-200 dark:text-white dark:bg-gray-900 dark:hover:bg-gray-800 hover:bg-gray-100"
                   onClick={() => setIsLoginOpen(true)}
                 >
                   Login
@@ -203,6 +204,7 @@ const HomePage = () => {
             </div>
           </DialogContent>
         </Dialog>
+      </div>
       </div>
     </ThemeProvider>
   );
