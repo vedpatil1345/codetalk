@@ -97,7 +97,7 @@ const HomePage = () => {
               Analyze, debug, and optimize your code with AI assistance
             </p>
             <div className="flex justify-center gap-4">
-              <Button size="lg" onClick={() => navigate('/code')}>
+              <Button className="bg-blue-500 dark:bg-blue-600 text-white dark:text-white" size="lg" onClick={() => navigate('/code')}>
                 Get Started - It's Free
               </Button>
               
