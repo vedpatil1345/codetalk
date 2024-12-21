@@ -1,7 +1,7 @@
 
 import { Route, Routes } from 'react-router-dom';
 
-import  {HomePage}  from './components/HomePage.tsx';
+import  HomePage  from './components/HomePage.tsx';
 import  CodePage  from './components/CodePage.tsx';
 
 
