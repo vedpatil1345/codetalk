@@ -50,7 +50,7 @@ const CodePage = () => {
                   value="Code-analyzer"
                   onClick={() => setActiveTab("Code-analyzer")}
                   className={`flex items-center gap-2 bg-white text-black dark:bg-gray-700 dark:text-white ${
-                    activeTab != "Code-analyzer" ? "border-2 border-green-700 dark:border-cyan-700" : "border-1 border-black dark:border-white"
+                    activeTab != "Code-analyzer" ? "border-1 border-black dark:border-cyan-700" : "border-2 border-green-700 dark:border-white"
                   }`}
                 >
                   <Code className="h-4 w-4" />
@@ -60,7 +60,7 @@ const CodePage = () => {
                   value="Error-analyzer"
                   onClick={() => setActiveTab("Error-analyzer")}
                   className={`flex items-center gap-2 bg-white text-black dark:bg-gray-700 dark:text-white ${
-                    activeTab != "Error-analyzer" ? "border-2 border-green-700 dark:border-cyan-700" : "border-1 border-black dark:border-white"
+                    activeTab != "Error-analyzer" ? "border-1 border-black dark:border-cyan-700" : "border-2 border-green-700  dark:border-white"
                   }`}
                 >
                   <AlertTriangle className="h-4 w-4" />

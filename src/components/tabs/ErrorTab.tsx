@@ -24,11 +24,11 @@ export const ErrorTab = () => {
 
   return (
     <div className="h-full flex flex-col items-center overflow-auto px-4">
-      <Card className="w-full max-w-4xl p-6 bg-card border-border mb-6">
-        <h2 className="text-2xl font-bold text-foreground mb-6">Error Analysis</h2>
+      <Card className="w-full max-w-4xl p-6 bg-card border-border mb-6 bg-gray-100 dark:bg-gray-800">
+        <h2 className="text-2xl font-bold text-blue-800 dark:text-cyan-600 mb-6 ">Error Analysis</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label htmlFor="error" className="block mb-2 font-medium text-foreground">
+            <label htmlFor="error" className="block mb-2 font-medium text-orange-600 dark:text-blue-400 ">
               Error Message
             </label>
             <Input
@@ -41,7 +41,7 @@ export const ErrorTab = () => {
             />
           </div>
           <div>
-            <label htmlFor="codeContext" className="block mb-2 font-medium text-foreground">
+            <label htmlFor="codeContext" className="block mb-2 font-medium text-orange-600 dark:text-blue-400">
               Code Context (optional)
             </label>
             <Textarea
@@ -54,7 +54,8 @@ export const ErrorTab = () => {
           </div>
           <Button 
             type="submit" 
-            className="w-full"
+            className="justify-center m-auto block w-full max-w-sm border-1 border-black dark:border-white bg-blue-500 text-white dark:bg-gray-700 dark:text-white"
+
           >
             Analyze
           </Button>

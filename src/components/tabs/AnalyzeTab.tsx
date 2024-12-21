@@ -59,7 +59,7 @@ export const AnalyzeTab = () => {
               </SelectContent>
             </Select>
           </div>
-          <Button type="submit" className="w-full border-1 border-black dark:border-white bg-blue-500 text-white dark:bg-gray-700 dark:text-white">
+          <Button type="submit" className="justify-center m-auto block w-full max-w-sm border-1 border-black dark:border-white bg-blue-500 text-white dark:bg-gray-700 dark:text-white">
             Analyze
           </Button>
         </form>
