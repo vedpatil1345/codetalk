@@ -12,7 +12,7 @@ const CodePage = () => {
 
   return (
     <ThemeProvider defaultTheme="system" storageKey="ui-theme">
-      <div className="h-screen w-screen bg-background transition-colors duration-300 dark:bg-gray-700 dark:text-white">
+      <div className="h-screen w-screen bg-background transition-colors duration-300 dark:bg-gray-800 dark:text-white">
         <div className="h-screen w-full flex flex-col p-4">
           <header className="flex justify-between items-center mb-8 px-4">
             <div className="text-center flex-1">
@@ -42,7 +42,7 @@ const CodePage = () => {
                   value="Code-analyzer"
                   onClick={() => setActiveTab("Code-analyzer")}
                   className={`flex items-center gap-2 bg-white text-black dark:bg-gray-700 dark:text-white ${
-                    activeTab === "Code-analyzer" ? "border-4 border-green-700 dark:border-cyan-700" : "border-2 border-black dark:border-white"
+                    activeTab != "Code-analyzer" ? "border-2 border-green-700 dark:border-cyan-700" : "border-1 border-black dark:border-white"
                   }`}
                 >
                   <Code className="h-4 w-4" />
@@ -52,7 +52,7 @@ const CodePage = () => {
                   value="Error-analyzer"
                   onClick={() => setActiveTab("Error-analyzer")}
                   className={`flex items-center gap-2 bg-white text-black dark:bg-gray-700 dark:text-white ${
-                    activeTab === "Error-analyzer" ? "border-4 border-green-700 dark:border-cyan-700" : "border-2 border-black dark:border-white"
+                    activeTab != "Error-analyzer" ? "border-2 border-green-700 dark:border-cyan-700" : "border-1 border-black dark:border-white"
                   }`}
                 >
                   <AlertTriangle className="h-4 w-4" />
