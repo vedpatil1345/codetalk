@@ -83,6 +83,6 @@ const CodePage = () => {
   );
 };
 
-export const Page = () => <CodePage />;
 
-export default Page;
+
+export default CodePage;

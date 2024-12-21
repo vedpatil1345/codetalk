@@ -26,5 +26,5 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src"]
+  "include": ["src", "../spotify clone/src/hooks/spotify-playback.ts"]
 }
