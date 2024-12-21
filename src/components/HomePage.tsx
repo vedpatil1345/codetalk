@@ -52,24 +52,7 @@ const TypewriterText = () => {
 };
 
 const HomePage = () => {
-  const [isLoginOpen, setIsLoginOpen] = useState(false);
-  const [isSignupOpen, setIsSignupOpen] = useState(false);
-  
-
   const navigate = useNavigate();
-  
-
-  const handleLogin = () => {
-    //login logic    
-    navigate('/code');
-  };
-
-  const handleSignup = () => {
-    //Signup logic
-    setIsLoginOpen(true);
-  };
-
-
   const features = [
     { icon: <BrainCircuit className="w-6 h-6" />, title: "AI-Powered Debugging", description: "Use AI to automatically analyze and debug your code" },
     { icon: <Globe className="w-6 h-6" />, title: "Access Anywhere", description: "Access your debugging sessions and projects from any device" },
@@ -85,7 +68,7 @@ const HomePage = () => {
         <nav className="border-b bg-white dark:bg-gray-800 rounded-xl flex">
           <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between h-16 items-center flex-wrap">
-              <div className="flex-shrink-0 flex ">
+              <div className="flex-shrink-0 flex cursor-pointer" onClick={ () => navigate('/')}>
               <Avatar.Root className="h-8 w-8 mt-1 mr-1 text-2xl font-bold flex justify-center text-blue-700 dark:text-blue-300">
                   <svg width="30" height="30" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12.5 2H8V7H13V2.5C13 2.22386 12.7761 2 12.5 2ZM13 8H8V13H12.5C12.7761 13 13 12.7761 13 12.5V8ZM7 7V2H2.5C2.22386 2 2 2.22386 2 2.5V7H7ZM2 8V12.5C2 12.7761 2.22386 13 2.5 13H7V8H2ZM2.5 1C1.67157 1 1 1.67157 1 2.5V12.5C1 13.3284 1.67157 14 2.5 14H12.5C13.3284 14 14 13.3284 14 12.5V2.5C14 1.67157 13.3284 1 12.5 1H2.5Z" 
@@ -102,19 +85,7 @@ const HomePage = () => {
               </div>
               <div className="flex items-center gap-4">
                 <ThemeToggle />
-                <Button 
-                  variant="ghost"
-                  className="text-black bg-gray-200 dark:text-white dark:bg-gray-900 dark:hover:bg-gray-800 hover:bg-gray-100"
-                  onClick={() => setIsLoginOpen(true)}
-                >
-                  Login
-                </Button>
-                <Button 
-                  className="bg-black text-white hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200"
-                  onClick={() => setIsSignupOpen(true)}
-                >
-                  Register
-                </Button>
+                
               </div>
             </div>
           </div>
@@ -123,11 +94,11 @@ const HomePage = () => {
         {/* Hero Section */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="text-center">
-          <h1 className=" text-4xl font-bold sm:text-6xl mt-6 mb-6 flex justify-center text-blue-700 dark:text-blue-300">
+          <h1 className=" text-4xl font-bold sm:text-6xl mt-2 mb-6 flex justify-center text-blue-700 dark:text-blue-300">
                   Code
                   <TypewriterText />
                 </h1>
-            <h1 className="text-4xl font-bold sm:text-6xl mt-6 mb-6">
+            <h1 className="text-2xl font-bold sm:text-4xl mt-6 mb-6">
               The Online Code Analysis Platform
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
@@ -159,61 +130,7 @@ const HomePage = () => {
               ))}
             </div>
           </div>
-        </div>
-
-        {/* Login Dialog */}
-        <Dialog open={isLoginOpen} onOpenChange={setIsLoginOpen}>
-          <DialogContent className="sm:max-w-md">
-            <DialogHeader>
-              <DialogTitle>Login to CodeTalk</DialogTitle>
-              <DialogDescription>
-                Enter your credentials to access your account
-              </DialogDescription>
-            </DialogHeader>
-            <div className="space-y-4 py-4">
-              <div className="space-y-2">
-                <Label htmlFor="email">Email</Label>
-                <Input id="email" type="email" placeholder="Enter your email" />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="password">Password</Label>
-                <Input id="password" type="password" placeholder="Enter your password" />
-              </div>
-              <Button className="w-full" onClick={handleLogin}>
-                Login
-              </Button>
-            </div>
-          </DialogContent>
-        </Dialog>
-
-        {/* Signup Dialog */}
-        <Dialog open={isSignupOpen} onOpenChange={setIsSignupOpen}>
-          <DialogContent className="sm:max-w-md">
-            <DialogHeader>
-              <DialogTitle>Create an Account</DialogTitle>
-              <DialogDescription>
-                Join CodeTalk to start analyzing your code
-              </DialogDescription>
-            </DialogHeader>
-            <div className="space-y-4 py-4">
-              <div className="space-y-2">
-                <Label htmlFor="signup-email">Email</Label>
-                <Input id="signup-email" type="email" placeholder="Enter your email" />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="signup-password">Password</Label>
-                <Input id="signup-password" type="password" placeholder="Create a password" />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="confirm-password">Confirm Password</Label>
-                <Input id="confirm-password" type="password" placeholder="Confirm your password" />
-              </div>
-              <Button className="w-full" onClick={handleSignup}>
-                Create Account
-              </Button>
-            </div>
-          </DialogContent>
-        </Dialog>
+        </div>        
       </div>
       </div>
     </ThemeProvider>

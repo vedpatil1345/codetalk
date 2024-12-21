@@ -35,7 +35,7 @@ export const ErrorTab = () => {
               type="text"
               id="error"
               name="error"
-              className="w-full bg-background text-foreground border-input"
+              className="w-full bg-white text-black border-input"
               placeholder="Paste your error message here"
               required
             />

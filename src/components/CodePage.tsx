@@ -6,16 +6,18 @@ import { ThemeToggle } from './theme/ThemeToggle';
 import { ThemeProvider } from './theme/ThemeProvider';
 import * as Avatar from '@radix-ui/react-avatar';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const CodePage = () => {
+  const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState("Code-analyzer");
 
   return (
     <ThemeProvider defaultTheme="system" storageKey="ui-theme">
       <nav className="border-b bg-white dark:bg-gray-800 rounded-xl flex">
           <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between h-16 items-center flex-wrap">
-              <div className="flex-shrink-0 flex ">
+            <div className="flex justify-between h-16 items-center flex-wrap " >
+              <div className="flex-shrink-0 flex cursor-pointer" onClick={ () => navigate('/')}>
                 
               <Avatar.Root className="h-8 w-8 mt-1 mr-1 text-2xl font-bold flex justify-center text-blue-700 dark:text-blue-300">
                   <svg width="30" height="30" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -68,7 +70,7 @@ const CodePage = () => {
                 </TabsTrigger>
               </TabsList>
               
-              <div className="flex-1 overflow-auto mt-6 w-full">
+              <div className="flex-1 overflow-auto w-full">
                 <TabsContent 
                   value="Code-analyzer"
                   className="h-full focus-visible:outline-none focus-visible:ring-0"
