@@ -33,7 +33,7 @@ export const ErrorTab = () => {
             <Textarea
               id="error"
               name="error"
-              className="w-full bg-foreground dark:bg-gray-900 text-foreground border-input"
+              className="w-full bg-background text-foreground border-input"
               placeholder="Paste your error message here"
               rows={2}
               required
@@ -46,7 +46,7 @@ export const ErrorTab = () => {
             <Textarea
               id="codeContext"
               name="codeContext"
-              className="w-full bg-foreground dark:bg-gray-900 text-foreground border-input"
+              className="w-full bg-background text-foreground border-input"
               placeholder="Add relevant code context here"
               rows={7}
             />
