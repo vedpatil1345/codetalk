@@ -86,7 +86,7 @@ const HomePage = () => {
         {/* Hero Section */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="text-center">
-          <h1 className=" text-4xl font-bold sm:text-6xl mt-2 mb-6 flex justify-center text-blue-700 dark:text-blue-300">
+          <h1 className=" text-3xl font-bold sm:text-5xl mt-2 mb-6 flex justify-center text-blue-700 dark:text-blue-300">
                   Code
                   <TypewriterText />
                 </h1>
