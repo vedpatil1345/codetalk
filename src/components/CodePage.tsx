@@ -7,7 +7,7 @@ import { ThemeProvider } from './theme/ThemeProvider';
 import * as Avatar from '@radix-ui/react-avatar';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import FloatingChatButton from './ChatSection';
 const CodePage = () => {
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState("Code-analyzer");
@@ -89,6 +89,7 @@ const CodePage = () => {
           </main>
         </div>
       </div>
+      <FloatingChatButton />
     </ThemeProvider>
   );
 };
