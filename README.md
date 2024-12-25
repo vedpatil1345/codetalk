@@ -92,8 +92,19 @@ VITE_FIREBASE_STORAGE_BUCKET=your_storage_bucket_here
 VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id_here
 VITE_FIREBASE_APP_ID=your_app_id_here
 ```
+4. Firebase Setup:
+    ```bash
+    #install firebase-tools 
+    npm install -g firebase-tools
 
-4. Start the development server:
+    #login in firebase
+    firebase login
+
+    #init
+    firebase init
+    ```
+
+6. Start the development server:
 
 ```bash
 npm run dev
