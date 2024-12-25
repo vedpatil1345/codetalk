@@ -175,11 +175,11 @@ The project adheres to strict TypeScript configurations and ESLint rules. Ensure
 Ved Patil\
 Senior Software Engineer
 
-### Professional Contact
+### Contact
 
 - **Email**: [vedpatil1345@gmail.com](mailto\:vedpatil1345@gmail.com)
 - **LinkedIn**: [Ved Patil](https://www.linkedin.com/in/ved-patila71968250)
-- **Mobile**: +91 6355616223
+
 
 ## Contributing
 
