@@ -115,7 +115,7 @@ const HomePage = () => {
                       <UserMenu email={user.email || ''} />
                     </div>
                   ) : (
-                    <Button onClick={handleLoginClick}>Login</Button>
+                    <Button className="bg-blue-500 dark:bg-blue-600 text-white dark:text-white" onClick={handleLoginClick}>Login</Button>
                   )}
                 </div>
               </div>
