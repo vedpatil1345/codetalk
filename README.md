@@ -173,7 +173,7 @@ The project adheres to strict TypeScript configurations and ESLint rules. Ensure
 ### Lead Developer
 
 Ved Patil\
-Senior Software Engineer
+
 
 ### Contact
 
