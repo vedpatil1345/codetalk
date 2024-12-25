@@ -104,7 +104,7 @@ firebase login
 firebase init
 ```
 
-6. Start the development server:
+5. Start the development server:
 
 ```bash
 npm run dev
