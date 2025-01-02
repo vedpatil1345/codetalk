@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="250" height="250" viewBox="0 0 200 200">
+  <g fill="none" stroke="#1A73E8" stroke-width="8">
+    <!-- Robot face -->
+    <rect x="0" y="0" width="200" height="200" rx="100" stroke="#1A73E8" stroke-width="5" fill="white"/>
+    <rect x="50" y="70" width="100" height="100" rx="20" stroke="#1A73E8" fill="none"/>
+    <!-- Eyes -->
+    <circle cx="125" cy="110" r="8" fill="#1A73E8"/>
+    <circle cx="75" cy="110" r="8" fill="#1A73E8"/>
+    <!-- Antenna -->
+    <line x1="100" y1="70" x2="100" y2="40" stroke="#1A73E8" stroke-width="8"/>
+    <circle cx="100" cy="35" r="8" fill="#1A73E8"/>
+    <!-- Mouth -->
+    <line x1="85" y1="150" x2="115" y2="150" stroke="#1A73E8" stroke-width="6"/>
+    <!-- Chat bubble -->
+    <rect x="120" y="35" width="60" height="30" rx="5" stroke="#1A73E8" fill="none"/>
+    <line x1="125" y1="45" x2="175" y2="45" stroke="#1A73E8" stroke-width="2"/>
+    <line x1="125" y1="55" x2="175" y2="55" stroke="#1A73E8" stroke-width="2"/>
+    <rect x="30" y="90" width="20" height="50" rx="5" stroke="#1A73E8" fill="none"/>
+    <rect x="150" y="90" width="20" height="50" rx="5" stroke="#1A73E8" fill="none"/>
+    
+  </g>
+</svg>
