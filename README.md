@@ -1,50 +1,192 @@
-# React + TypeScript + Vite
+# CodeTalk
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A professional code analysis platform powered by advanced AI technology, designed to streamline code understanding, debugging, and optimization processes.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+CodeTalk integrates cutting-edge AI capabilities with modern web technologies to deliver instant, accurate code analysis and debugging assistance. The platform provides comprehensive insights, error analysis, and optimization recommendations across multiple programming languages.
 
-## Expanding the ESLint configuration
+## Core Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Intelligent Code Analysis
 
-- Configure the top-level `parserOptions` property like this:
+- In-depth code structure and functionality analysis
+- Performance optimization recommendations
+- Guidance on implementing best practices
+- Support for multiple languages, including JavaScript, Python, Java, and C++
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### Advanced Error Diagnostics
+
+- Detailed identification of error causes
+- Context-aware solution recommendations
+- Strategies for error prevention and adherence to best practices
+- Comprehensive debugging assistance
+
+### Technical Capabilities
+
+- Real-time AI-powered analysis
+- Language-specific optimization recommendations
+- Syntax highlighting and code formatting
+- Responsive, cross-platform interface
+
+## Technical Architecture
+
+### Frontend Technologies
+
+- React 18.2.0 with TypeScript 5.3.3
+- Vite build system
+- Tailwind CSS for styling
+- React Router for navigation
+- Shadcn/UI component library
+
+### AI Integration
+
+- Groq AI API integration
+- LangChain framework
+- Real-time processing capabilities
+
+### Development Tools
+
+- React Markdown for documentation
+- React Syntax Highlighter
+- Custom hooks for state management
+- Theme provider for appearance customization
+
+## Installation
+
+### Prerequisites
+
+```bash
+Node.js >= 14.0.0
+npm >= 6.0.0
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Development Setup
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. Clone the repository:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+git clone https://github.com/vedpatil1345/Codetalk.git
+cd Codetalk
 ```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Configure environment variables:
+
+```bash
+cp .env.example .env
+# Add your GROQ API key to .env file
+# Groq API Configuration
+VITE_GROQ_API_KEY=your_groq_api_key_here
+
+# Firebase Configuration
+VITE_FIREBASE_API_KEY=your_firebase_api_key_here
+VITE_FIREBASE_AUTH_DOMAIN=your_auth_domain_here
+VITE_FIREBASE_PROJECT_ID=your_project_id_here
+VITE_FIREBASE_STORAGE_BUCKET=your_storage_bucket_here
+VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id_here
+VITE_FIREBASE_APP_ID=your_app_id_here
+VITE_GEMINI_API=you_gemini_api_here
+```
+4. Firebase Setup:
+```bash
+#install firebase-tools 
+npm install -g firebase-tools
+
+#login in firebase
+firebase login
+
+#init
+firebase init
+```
+
+5. Start the development server:
+
+```bash
+npm run dev
+```
+
+### Production Deployment
+
+```bash
+npm run build
+npm run preview # Test the production build locally
+```
+
+## Usage Guidelines
+
+### Code Analysis
+
+1. Select the target programming language.
+2. Input or paste the code snippet.
+3. Submit for analysis.
+4. Review the comprehensive analysis results.
+
+### Error Analysis
+
+1. Provide the error message.
+2. Add relevant code context (optional).
+3. Submit for diagnosis.
+4. Review the detailed error analysis and solutions.
+
+## API Integration
+
+The platform uses the Groq AI API for code analysis. Ensure proper API key configuration in the environment variables for full functionality.
+
+```typescript
+const llm = new ChatGroq({
+  modelName: 'llama-3.2-90b-vision-preview',
+  apiKey: process.env.VITE_GROQ_API_KEY,
+  temperature: 0.7
+});
+```
+
+## Development
+
+### Project Structure
+
+```
+src/
+├── components/     # React components
+├── hooks/          # Custom React hooks
+├── types/          # TypeScript type definitions
+├── utils/          # Utility functions
+└── pages/          # Route components
+```
+
+### Running Tests
+
+```bash
+npm run test
+```
+
+### Code Style
+
+The project adheres to strict TypeScript configurations and ESLint rules. Ensure all new code complies with existing patterns.
+
+## Contact Information
+
+### Lead Developer
+
+Ved Patil
+
+
+### Contact
+
+- **Email**: [vedpatil13042005@gmail.com](mailto\:vedpatil1345@gmail.com)
+- **LinkedIn**: [Ved Patil](https://www.linkedin.com/in/ved-patila71968250)
+
+
+## Contributing
+
+We welcome contributions that align with the project's goals of delivering professional code analysis solutions.&#x20;
+
+
+
+---
+
