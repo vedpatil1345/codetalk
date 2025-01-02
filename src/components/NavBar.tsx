@@ -6,7 +6,7 @@ import UserMenu from './auth/UserMenu';
 import { Button } from '@/components/ui/button';
 import { ThemeToggle } from './theme/ThemeToggle';
 import classNames from 'classnames';
-import logo from '@/assets/Codetalk.png';
+import logo from '@/assets/CodeTalk.png';
 
 // Reducer for managing menu states
 const menuReducer = (state: { isMenuOpen: boolean; isCodeRoomOpen: boolean }, action: { type: string }) => {
