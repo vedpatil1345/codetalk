@@ -90,10 +90,10 @@ export const CodeSection = ({
   // Calculate the number of lines for the line numbers column
 
   return (
-    <div className=" h-full lg:h-auto rounded-lg overflow-auto border border-gray-500 dark:border-gray-700 bg-gray-200/50 dark:bg-slate-900/70 backdrop-blur-3xl shadow-lg">
+    <div className=" h-full lg:h-auto rounded-lg overflow-hidden border border-gray-500 dark:border-gray-700 bg-gray-200/50 dark:bg-slate-900/70 backdrop-blur-3xl shadow-lg">
       {/* Header bar containing language selector and copy button */}
       <div className="relative flex items-center justify-end px-4 py-2 bg-transparent border-b border-gray-500/50 dark:border-gray-700 h-fit">
-        <div className="absolute left-4 mx-auto flex items-center space-x-2 text-bold font-bold overflow-clip max-w-[50%] text-blue-500">
+        <div className="absolute left-4 mx-auto flex items-center space-x-2 text-bold font-bold  lg:max-w-[50%] text-blue-500">
           <Code className="w-4 h-4 mr-2" />{title}
         </div>
         <button
@@ -112,14 +112,14 @@ export const CodeSection = ({
         </button>
       </div>
 
-      <div className="flex overflow-auto">
+      <div className="flex max-h-[85%] overflow-auto">
         {/* Main code textarea */}
         <textarea
           ref={textareaRef}
           name={name}
           {...props}
           onChange={handleCodeChange}
-          className={`w-full h-full ${className} lg:max-h-[75%] overflow-auto text-black dark:text-white dark:bg-slate-800/70 border-b border-gray-500/50 dark:border-gray-700
+          className={`w-full h-full ${className} overflow-auto text-black dark:text-white dark:bg-slate-800/70 border-b border-gray-500/50 dark:border-gray-700
              font-mono text-sm pl-4 pr-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent 
             outline-none  resize-none`}
           spellCheck="false"
@@ -367,7 +367,7 @@ const CodeWithAi: React.FC = () => {
               name="code"
               value={code}
               title={'Code For Context'}
-              className='lg:min-h-[64vh]'
+              className='min-h-[64vh]'
               placeholder="Paste your code here..."
               onChange={(e) => setCode(e.target.value)}
               onCodeChange={handleCodeChange}

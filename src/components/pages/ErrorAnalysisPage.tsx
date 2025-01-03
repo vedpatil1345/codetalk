@@ -114,7 +114,7 @@ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
 
     return (
         <div className="min-h-fit bg-transparent overflow-auto">
-          <div className="top-12 absolute left-0 right-0 mx-0 px-6 py-6 ">
+          <div className="lg:top-5 absolute left-0 right-0 mx-0 px-6 py-6 ">
             <h1 className="text-3xl font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-800 to-blue-500 dark:from-blue-400 dark:to-blue-300">
               Error Analysis Tool
             </h1>

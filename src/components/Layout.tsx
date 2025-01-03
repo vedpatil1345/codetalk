@@ -93,12 +93,13 @@ export const Layout = () => {
     <ThemeProvider storageKey="vite-ui-theme">
       <GradientBackground className="min-h-screen flex flex-col font-mono">
         <NavBar />
-        <main className="dark:backdrop-blur-sm flex-grow mt-12 ">
+        <main className="dark:backdrop-blur-sm flex-grow mt-28 mb-auto lg:mt-12">
           <ProtectedRoute>
             <Outlet />
+           
           </ProtectedRoute>
         </main>
-        <Footer />
+         <Footer />
       </GradientBackground>
     </ThemeProvider>
   );

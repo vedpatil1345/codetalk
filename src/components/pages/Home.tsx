@@ -51,7 +51,7 @@ export const Home: React.FC = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="flex flex-col items-center justify-center text-center max-h-screen mx-auto">
+    <div className="flex flex-col items-center justify-center text-center min-h-screen">
       <h1
         className="mt-12 text-4xl lg:text-5xl font-bold mb-4 bg-clip-text text-transparent transition-colors duration-300
                    bg-gradient-to-r from-blue-800 via-blue-800 to-blue-800
