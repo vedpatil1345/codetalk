@@ -90,10 +90,9 @@ export const CodeSection = ({
   // Calculate the number of lines for the line numbers column
 
   return (
-    <div className=" h-full lg:h-auto rounded-lg overflow-hidden border border-gray-500 dark:border-gray-700 bg-gray-200/50 dark:bg-slate-900/70 backdrop-blur-3xl shadow-lg">
-      {/* Header bar containing language selector and copy button */}
+    <div className="h-full lg:h-auto rounded-lg overflow-hidden border border-gray-500 dark:border-gray-700 bg-gray-200/50 dark:bg-slate-900/70 backdrop-blur-3xl shadow-lg">
       <div className="relative flex items-center justify-end px-4 py-2 bg-transparent border-b border-gray-500/50 dark:border-gray-700 h-fit">
-        <div className="absolute left-4 mx-auto flex items-center space-x-2 text-bold font-bold  lg:max-w-[50%] text-blue-500">
+        <div className="absolute left-4 mx-auto flex items-center space-x-2 text-bold font-bold lg:max-w-[50%] text-blue-500">
           <Code className="w-4 h-4 mr-2" />{title}
         </div>
         <button
@@ -101,19 +100,18 @@ export const CodeSection = ({
           className="p-1 hover:bg-gray-700 rounded transition-colors"
           title="Copy code"
         >
-          <Copy className="w-4 h-4"  />
+          <Copy className="w-4 h-4" />
         </button>
         <button
           onClick={handleClear}
           className="p-1 hover:bg-gray-700 rounded transition-colors"
-          title="clear"
+          title="Clear"
         >
-          <Trash2 className="w-4 h-4"  />
+          <Trash2 className="w-4 h-4" />
         </button>
       </div>
 
       <div className="flex max-h-[85%] overflow-auto">
-        {/* Main code textarea */}
         <textarea
           ref={textareaRef}
           name={name}
@@ -121,7 +119,7 @@ export const CodeSection = ({
           onChange={handleCodeChange}
           className={`w-full h-full ${className} overflow-auto text-black dark:text-white dark:bg-slate-800/70 border-b border-gray-500/50 dark:border-gray-700
              font-mono text-sm pl-4 pr-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent 
-            outline-none  resize-none`}
+            outline-none resize-none`}
           spellCheck="false"
         />
       </div>
@@ -355,12 +353,12 @@ const CodeWithAi: React.FC = () => {
     setInputText('');
   };
   return (
-    <div className="max-h-screen bg-transparent my-auto container font-mono">
+    <div className="lg:min-h-screen w-full bg-transparent px-4 pb-4 md:px-0">
       <div className="mx-auto lg:mx-10 h-[80vh] w-full lg:w-[95vw] lg:max-w-screen">
         <h1 className="text-3xl font-extrabold mt-20 mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-800 to-blue-500 dark:from-blue-400 dark:to-blue-300">
           Programming with Ai
         </h1>
-        <div className="grid grid-rows-[40%_60%] lg:grid-rows-1 lg:grid-cols-[40%_60%] lg:gap-8 h-full lg:h-max">
+        <div className="grid grid-rows-[35%_60%] gap-y-5 lg:grid-rows-1 lg:grid-cols-[35vw_58vw] lg:gap-8 h-full lg:h-max">
           {/* Code Section */}
           <div className=" h-full w-full lg:h-[75vh] lg:max-h-full overflow-auto space-y-6 bg-slate-200/50 dark:bg-slate-900/50 p-4 rounded-lg border-2 border-slate-900/30 dark:border-slate-300/30 shadow-md">
             <CodeSection
@@ -375,8 +373,8 @@ const CodeWithAi: React.FC = () => {
           </div>
 
           {/* Chat Section remains the same... */}
-          <div className="h-full overflow-hidden w-full  lg:relative flex flex-col bg-slate-200/50 dark:bg-gray-800/50 text-white rounded-lg shadow-md  lg:mr-12 border-2 border-slate-900/30 dark:border-slate-300/30">
-            <div className="flex-1 lg:max-h-[75vh] overflow-y-auto p-4 space-y-4" id='scrollable-div'>
+          <div className="h-full lg:max-h-[75vh] overflow-hidden w-full  lg:relative flex flex-col bg-slate-200/50 dark:bg-gray-800/50 text-white rounded-lg shadow-md  lg:mr-12 border-2 border-slate-900/30 dark:border-slate-300/30">
+            <div className="flex-1 overflow-y-auto p-4 space-y-4" id='scrollable-div'>
               {messages.map((message) => (
                 <MessageBubble key={message.id} message={message} />
               ))}

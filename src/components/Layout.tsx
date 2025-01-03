@@ -91,7 +91,7 @@ const Footer = () => {
 export const Layout = () => {
   return (
     <ThemeProvider storageKey="vite-ui-theme">
-      <GradientBackground className="min-h-screen flex flex-col font-mono">
+      <GradientBackground className="min-h-screen overflow-auto flex flex-col font-mono">
         <NavBar />
         <main className="dark:backdrop-blur-sm flex-grow mt-28 mb-auto lg:mt-12">
           <ProtectedRoute>

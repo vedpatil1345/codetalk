@@ -51,7 +51,7 @@ export const Home: React.FC = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="flex flex-col items-center justify-center text-center min-h-screen">
+    <div className="flex flex-col items-center justify-center text-center lg:min-h-screen">
       <h1
         className="mt-12 text-4xl lg:text-5xl font-bold mb-4 bg-clip-text text-transparent transition-colors duration-300
                    bg-gradient-to-r from-blue-800 via-blue-800 to-blue-800
@@ -96,7 +96,7 @@ import metalogo from '@/assets/meta.svg';
 const ToolsDisplay = () => {
   return (
     <div className="w-full bg-gradient-to-br from-slate-900 to-slate-800 p-8">
-      <h1 className="text-3xl text-gray-200 text-center mb-5">
+      <h1 className="text-xl text-gray-200 text-center mb-5">
         Tools we Integrate for Context & Communication
       </h1>
       

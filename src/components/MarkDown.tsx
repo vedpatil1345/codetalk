@@ -25,7 +25,7 @@ export const MarkDown: React.FC<{ children: string }> = ({ children }) => {
           const codeContent = String(children).replace(/\n$/, "");
 
           return !inline && match ? (<div className="relative group">
-            <div className=" h-full w-fit max-w-[80%] lg:h-auto rounded-lg overflow-auto border border-gray-500 dark:border-gray-700 bg-gray-200/50 dark:bg-slate-900/70 backdrop-blur-3xl shadow-lg">
+            <div className=" h-full w-fit max-w-full rounded-lg overflow-auto border border-gray-500 dark:border-gray-700 bg-gray-200/50 dark:bg-slate-900/70 backdrop-blur-3xl shadow-lg">
       {/* Header bar containing language selector and copy button */}
       <div className="relative flex items-center justify-end px-4 py-2 bg-transparent border-b border-gray-500/50 dark:border-gray-700">
         <div className="absolute left-4 mx-auto flex items-center space-x-2">
@@ -39,7 +39,7 @@ export const MarkDown: React.FC<{ children: string }> = ({ children }) => {
           <Copy className="w-4 h-4"  />
         </button>
         
-      </div><div className="flex h-[83.3%] overflow-auto dark:bg-slate-800/70 border-b border-gray-500/50 dark:border-gray-700">
+      </div><div className="flex overflow-auto dark:bg-slate-800/70 border-b border-gray-500/50 dark:border-gray-700">
             <SyntaxHighlighter
               PreTag="div"
               language={match[1]}
