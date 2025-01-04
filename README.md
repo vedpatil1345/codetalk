@@ -1,6 +1,7 @@
 # CodeTalk
 
 A professional code analysis platform powered by advanced AI technology, designed to streamline code understanding, debugging, and optimization processes.
+[Preview](https://codetalk-nine.vercel.app)
 
 ## Overview
 
