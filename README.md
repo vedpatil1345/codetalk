@@ -2,6 +2,7 @@
 
 The Online Code Analysis and Debugging Platform - A comprehensive development environment powered by LLaMA 3.3 70B and Gemini AI for intelligent code analysis, debugging, and optimization.
 
+[Preview](https://codetalk-0-0-2.vercel.app)
 ## Overview
 
 CodeTalk is an advanced web application that combines cutting-edge AI technologies with modern development tools to create a powerful coding assistant. Built with React and TypeScript, it offers developers an intelligent platform for code analysis, debugging, and optimization, leveraging the latest advancements in AI technology.
