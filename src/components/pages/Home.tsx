@@ -51,9 +51,9 @@ export const Home: React.FC = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="flex flex-col items-center justify-center text-center lg:min-h-screen">
+    <div className="flex flex-col items-center justify-center text-center lg:max-h-screen">
       <h1
-        className="mt-12 text-4xl lg:text-5xl font-bold mb-4 bg-clip-text text-transparent transition-colors duration-300
+        className=" text-4xl lg:text-5xl font-bold mb-4 bg-clip-text text-transparent transition-colors duration-300
                    bg-gradient-to-r from-blue-800 via-blue-800 to-blue-800
                    dark:from-blue-500 dark:via-blue-400 dark:to-blue-500  p-1"
       >
@@ -77,7 +77,7 @@ export const Home: React.FC = () => {
       <div className="block w-[80%] lg:w-1/4 mx-auto mt-5 mb-2 items-center rounded-xl">
         <iframe
           className="w-full aspect-video rounded-xl shadow-xl shadow-blue-800/50 dark:shadow-blue-500/50"
-          src="https://www.youtube.com/embed/PjIZxKcYCqI?si=ITSptz4PuCUkLfKo"
+          src="https://www.youtube.com/embed/psTOEr2itDo?si=GXecUrHGlOCQw0cf"
           title="YouTube video player"
           aria-label="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

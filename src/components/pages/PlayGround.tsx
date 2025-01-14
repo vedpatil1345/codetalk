@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet, useNavigate } from "react-router-dom";
+import { useNavigate,Outlet } from "react-router-dom";
 import codeAnalysisDarkImg from '@/assets/code-analysis.png';
 import errorAnalysisDarkImg from '@/assets/error-analysis.png';
 import imgCodeDarkImg from '@/assets/img-code.png';
@@ -53,7 +53,7 @@ export const PlayGroundPage: React.FC = () => {
     },
   ];
   return (
-    <div className="container mx-auto px-4 py-8 max-h-fit mb-6">
+    <div className="container mx-auto px-4 min-h-screen ">
       <div className="flex justify-center">
         <h1 className="text-2xl lg:text-4xl font-bold mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-800 to-blue-500 dark:from-blue-400 dark:to-blue-300">
           CodeRoom
@@ -148,14 +148,14 @@ export const PlayGroundPage: React.FC = () => {
   );
 };
 
-
-
-
 export const PlayGround: React.FC = () => {
   return (
-    <div className="mx-auto max-h-fit">
+    <div className="mx-auto min-h-fit overflow-auto">
       <Outlet />
     </div>
   );
 };
+
+
+
 

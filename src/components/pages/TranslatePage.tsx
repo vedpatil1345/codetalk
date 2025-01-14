@@ -34,8 +34,8 @@ export const TranslatePage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen w-full bg-transparent">
-      <div className="container mx-auto px-4 py-6 max-w-7xl">
+    <div className="min-h-[85vh] w-full bg-transparent px-4 md:px-0">
+      <div className="container mx-auto px-4 lg:px-0 max-w-screen">
         <h1 className="text-2xl md:text-3xl font-bold mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-800 to-blue-500 dark:from-blue-400 dark:to-blue-300">
           Code Translator
         </h1>

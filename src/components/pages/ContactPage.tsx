@@ -60,7 +60,7 @@ const ContactPage: React.FC = () => {
   };
 
   return (
-    <div className="max-h-screen bg-transparent flex items-center justify-center p-4">
+    <div className="max-h-[85vh] bg-transparent flex items-center justify-center">
       <Card className="max-w-2xl w-full bg-transparent border-none">
         <CardHeader className="text-center">
           <div className="flex justify-center mb-4">

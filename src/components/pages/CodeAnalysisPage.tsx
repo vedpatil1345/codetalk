@@ -51,7 +51,7 @@ export const CodeAnalysisPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen w-full bg-transparent px-4 py-6 md:px-6">
+    <div className="min-h-[85vh] w-full bg-transparent px-4 md:px-0">
       <h1 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-800 to-blue-500 dark:from-blue-400 dark:to-blue-300">
         Code Analysis Tool
       </h1>

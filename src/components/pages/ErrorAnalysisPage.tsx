@@ -107,7 +107,7 @@ export const ErrorAnalysisPage: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen w-full bg-transparent px-4 py-6 md:px-6">
+    <div className="min-h-[85vh] w-full bg-transparent px-4 md:px-0">
       <h1 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-800 to-blue-500 dark:from-blue-400 dark:to-blue-300">
         Error Analysis Tool
       </h1>
@@ -121,8 +121,9 @@ export const ErrorAnalysisPage: React.FC = () => {
               <Textarea
                 name="error"
                 rows={3}
-                className="w-full font-mono border-2 border-slate-900/30 dark:border-slate-300/50 min-h-[100px]"
+                className="w-full font-mono border-2 border-slate-900/30 dark:border-slate-300/50 min-h-[100px] resize-none"
                 placeholder="Paste your Error here..."
+
                 required
               />
             </div>

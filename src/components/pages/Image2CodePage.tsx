@@ -102,13 +102,13 @@ export const Image2CodePage = () => {
   };
 
   return (
-    <div className="min-h-screen w-full bg-transparent">
-      <div className="container mx-auto px-4 py-6 max-w-7xl">
+    <div className="min-h-[85vh] w-full bg-transparent px-4 md:px-0">
+      <div className="container mx-auto max-w-screen">
         <h1 className="text-2xl md:text-3xl font-bold mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-800 to-blue-500 dark:from-blue-400 dark:to-blue-300">
           Image to Code Converter
         </h1>
 
-        <div className="grid grid-cols-1 lg:grid-cols-[35%_60%] gap-4 lg:gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-4 lg:gap-8">
           {/* Configuration Section */}
           <div className="space-y-6 bg-slate-200/50 dark:bg-slate-900/50 p-4 rounded-lg border-2 border-slate-900/30 dark:border-slate-300/30 shadow-md">
             <div>
